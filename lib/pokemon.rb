@@ -28,7 +28,7 @@ end
 def self.find(id,db)
   sql = "SELECT * FROM pokemon WHERE id = ?"
   pokemon=db.execute(sql,id)[0]
-  return Pokemon.new(id:pokemon[0],name:pokemon[1],type:pokemon[2],db:db)
+  Pokemon.new(id:pokemon[0],name:pokemon[1],type:pokemon[2],db:db)
 #binding.pry
 end
 
