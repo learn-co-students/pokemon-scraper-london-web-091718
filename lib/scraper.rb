@@ -28,4 +28,6 @@ class Scraper
     end
   end
 
+      # INSERT INTO (id, name, type) VALUES (?, ?, ?)", id, name, type
+
 end
